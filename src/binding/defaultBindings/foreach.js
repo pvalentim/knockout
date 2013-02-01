@@ -36,3 +36,5 @@ ko.bindingHandlers['foreach'] = {
 };
 ko.expressionRewriting.bindingRewriteValidators['foreach'] = false; // Can't rewrite control flow bindings
 ko.virtualElements.allowedBindings['foreach'] = true;
+ko.exportSymbol('bindingHandlers.foreach', ko.bindingHandlers['foreach']);
+ko.exportSymbol('bindingHandlers.foreach.makeTemplateValueAccessor', ko.bindingHandlers['foreach'].makeTemplateValueAccessor);
